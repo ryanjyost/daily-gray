@@ -1,0 +1,16 @@
+<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+    <script>
+      tinymce.init({
+        selector: '#editor',
+        plugins: 'link paste ',
+         paste_enable_default_filters: false,
+        min_height:2000,
+        elementpath: false,
+        fixed_toolbar_container: '#toolbar',
+        menubar: false,
+        body_class: 'myeditor',
+        content_css : '/css/style.css',
+        toolbar: 'undo redo | styleselect | paste | bold italic underline strikethrough superscript | cut copy paste | link image | bullist numlist | removeformat'
+      });
+  </script>
+

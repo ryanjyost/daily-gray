@@ -1,0 +1,43 @@
+<!-- views/pages/post.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <title>The Daily Gray</title>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+        <div id="top" class="row">
+            <div id="black" class="col-sm-6">
+                <a target="_blank" href=<%= blackImage %> >
+                    <img id="black-img" src=<%= blackImage %> alt="" />
+                </a>
+                <h3><%= black %></h3>
+            </div>
+            <div id="white" class="col-sm-6">
+                <a target="_blank" href=<%= whiteImage %> >
+                    <img id="white-img" src=<%= whiteImage %> alt="" />
+                </a>
+                <h3><%= white %></h3>
+            </div>
+        </div>
+
+
+
+         <% include ../partials/post-info %>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+
+
+</body>
+</html>

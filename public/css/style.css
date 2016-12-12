@@ -1,0 +1,646 @@
+/*================================================
+	Basic selectors
+================================================*/
+
+body.container{
+	font-family: 'Libre Franklin', sans-serif;
+	background-color: #f9f9f9;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	padding: 2px 3% 60px 3%;
+}
+
+i{
+	color: #151515;
+}
+
+a{
+	color: #5EC7FF;
+}
+
+a:hover{
+	color: #5EC7FF;
+	text-decoration: underline;
+}
+
+p{
+	font-weight: 300;
+	font-size: 1.6em;
+	margin: 1vh 0px 1.5em 0px;
+	color: #151515;
+	line-height: 1.75em;
+	white-space: pre-wrap;
+	font-family: 'Libre Franklin', sans-serif !important;
+}
+
+h1{
+	font-size: 4em;
+	font-family: 'Raleway', sans-serif !important;
+	color: #585858;
+	background: transparent;
+}
+
+h2{
+	font-size: 3.5em;
+	font-family: 'Libre Franklin', sans-serif !important;
+	color: #585858;
+}
+
+h3{
+	font-size: 3.5vw;
+	font-family: 'Raleway', sans-serif !important;
+	color: #585858;
+	font-weight: 600;
+}
+
+h4{
+	font-size: 2.1em;
+	font-family: 'Libre Franklin' !important;
+	color: #585858;
+	font-weight: 600;
+}
+
+h5{
+	font-size: 2em;
+	font-family: 'Raleway' !important;
+	color: #585858;
+	font-weight: 600;
+}
+
+
+h6{
+	font-size: 1.8em;
+	font-family: 'Raleway', sans-serif !important;
+	color: #585858;
+	font-weight: 600;
+}
+
+
+
+/*================================================
+	Navbar
+================================================*/
+
+a[id="name"]{
+	color: #585858;
+	font-weight: 600;
+	font-family: 'PT Sane', sans-serif !important;
+	font-size: 20px;
+	padding: 15px 0px 20px 0px;
+}
+
+
+.navbar-header{
+	margin-left: 1%;
+}
+
+#name{
+	line-height: 15px;
+}
+
+#name p{
+	font-size: 12px;
+	font-weight: 300;
+	padding-left: 5px;
+}
+
+.logo-img{
+	width: 50px;
+	right: 0;
+	position: absolute;
+	margin:6px 5% 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#logo{
+
+}
+
+.logo-hover{
+	border: 1px solid transparent;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+
+#navbar{
+	width: 100%;
+	background-color: #f9f9f9;
+	border: none;
+	margin: 0px 0px 10px 0px;
+	height: 60px;
+
+}
+
+#menu-butts{
+	display: none;
+	position: absolute;
+	right: 0;
+	margin: 19px 200px 0px 0px;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif !important;
+}
+
+.menu-btn{
+	padding: 0px 10px 0px 10px;
+	color: #6E6E6E;
+	font-weight: 800;
+}
+
+.menu-btn:hover{
+	color: #6E6E6E;
+	text-decoration: none;
+}
+
+/*================================================
+ HOME / INDEX
+================================================*/
+
+#home-cont{
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+	#home-cont h2{
+		text-align: center;
+	}
+
+	#home-cont h3{
+		font-size:  3.5vw;
+	}
+
+.feed-item{
+	border-bottom: 1px solid #a4a4a4;
+	margin: 10px 0px 10px 0px;
+	padding: 10px 0px 20px 0px;
+}
+
+.feed-content{
+	max-width: 800px;
+	display: block;
+	margin: auto;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.feed-author{
+	display: block;
+	text-align: center;
+}
+
+.feed-post-img{
+	display: block;
+	margin: auto;
+	max-height: 65vh;
+	max-width: 100%;
+}
+
+
+/* Styling for gray style post */
+.feed-black-img{
+	width: 35%;
+	display: inline-block;
+}
+
+.feed-white-img{
+	width: 25%;
+	display: inline-block;
+}
+
+.feed-title-gray{
+	font-size: 5vw;
+	width: 35%;
+	display: inline-block;
+}
+
+
+
+/*================================================
+ POST
+================================================*/
+
+#post-title{
+	width: 100%;
+	margin: auto;
+	margin-top: 30px;
+	font-weight: 600;
+}
+
+#post-img-cont{
+	display: block;
+	max-height: 60vh;
+}
+
+#post-info-cont{
+	background-color: #f9f9f9;
+	width: 100%;
+	margin: auto;
+	margin-top: 1vh;
+	text-align: center;
+	padding: 4vh 10% 0vh 10%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+	#post-info-cont > p{
+		font-size: 1.25vw;
+	}
+
+		#gray-title{
+			width: 100%;
+			margin: auto;
+			font-weight: 600;
+		}
+
+/*================================================
+	GRAY POST
+================================================*/
+
+
+#top{
+	border-radius: 20px;
+	display: flex;
+	margin: auto;
+
+}
+
+#black{
+	max-height: 60vh;
+	/* min-height: 60vh; */
+	background-color: #585858;
+	color: #ffffff;
+	font-weight: 200;
+	text-align: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 0px 0px 0px 0px !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #f9f9f9;
+    max-width: 50%;
+}
+
+#black h3{
+	position: absolute;
+   top: 10px;
+   left: 0;
+   width: 100%;
+   padding: 0px 5% 0px 5%;
+   color: #ffffff;
+}
+
+#black-img{
+ 	flex-shrink: 1;
+    width: 100%;
+    max-width: 100%;
+    opacity: .2;
+    min-height: 100%;
+}
+
+
+#white{
+	max-height: 60vh;
+/* 	min-height: 60vh; */
+	background-color: #ffffff;
+	font-weight: 200;
+	border: 1px solid #ffffff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 0px 0px 0px 0px !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 50%;
+    text-align: right;
+}
+
+#white h3{
+position: absolute;
+   top: 10px;
+   left: 0;
+   width: 100%;
+   padding: 0px 5% 0px 5%;
+}
+
+#white-img{
+    width: 100%;
+    max-width: 100%;
+/*     height: 100%;
+    max-height: 100%; */
+    opacity: .25;
+    min-height: 100%;
+}
+
+
+a.img-src {
+	display: inline-block;
+	font-size: 8px;
+	z-index: 10000;
+	top: 0 !important;
+	line-height: 10px !important;
+}
+
+#black-src{
+	width: 49%;
+	text-align: left;
+	color: #D8D8D8;
+
+}
+
+#white-src{
+	width: 49%;
+	text-align: right;
+	color: #D8D8D8;
+
+}
+
+
+
+
+#content{
+	margin: auto;
+	display: block;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+
+#content h3{
+	font-weight: 100;
+	line-height: 1.5em;
+}
+
+
+/*========================================================*/
+/* Submit Post Page */
+/*========================================================*/
+
+#post-img-link{
+	width: 70%;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid #D8D8D8;
+	margin: auto;
+	display: block;
+	padding-bottom: 2px;
+	margin-bottom: 5px;
+	font-style: italic;
+
+}
+
+#img-preview{
+	margin: auto;
+	display: block;
+	max-height: 60vh;
+}
+
+#refresh-post-img{
+	width: 2%;
+	position: relative;
+	cursor: pointer;
+	display: block;
+	left: 49.5%;
+}
+
+#post-img{
+
+	border-radius: 5px;
+	flex-shrink: 1;
+  	 width: auto;
+    max-height: 65vh;
+}
+
+/*========================================================*/
+/* Submit Gray Page */
+/*========================================================*/
+
+.form-erros{
+	height: 50px;
+	display: block;
+	text-align: center;
+}
+
+	.form-errors h6{
+		text-align: center;
+		background-color: #424242;
+		color: #ffffff;
+		padding: 5px 5px 5px 5px;
+		border-radius: 5px;
+		max-width: 1000px;
+		margin: auto;
+		margin-bottom: 5px;
+	}
+
+	.error-close-icon{
+		float: right;
+		padding: 0px 5px 0px 0px;
+		font-size: 12px;
+		vertical-align: middle;
+		top: 50%;
+		cursor: pointer;
+	}
+
+#gray-form{
+	margin-top: 2vh;
+}
+
+#content{
+	margin-top: 2vh;
+	border: none !important;
+}
+
+#toolbar{
+	width: 70%;
+}
+
+
+
+textarea:focus, input:focus{
+    outline: none;
+    background-color: transparent;
+
+}
+
+textarea, input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+input[name="title"]{
+	width:90%;
+	text-align: center;
+	height: 1.5em;
+	font-weight: 600;
+}
+
+input[name="author"]{
+	text-align: left;
+	display: inline-block;
+}
+
+textarea[name="black"]{
+	text-align: left;
+	display: block;
+	white-space: pre-wrap;
+	width: 100%;
+	min-width: 100%;
+	min-height: 40vh;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+textarea[name="white"]{
+	text-align: right;
+	display: block;
+	white-space: pre-wrap;
+	width: 100%;
+	min-width: 100%;
+	min-height: 40vh;
+	font-weight: 500;
+}
+
+
+
+textarea[name="content"]{
+	width: 100%;
+	padding-top: 2vh;
+}
+
+#whiteImage{
+	float: right;
+	text-align: right;
+	font-size: 1em;
+	width: 40%;
+	font-style: italic;
+}
+
+#blackImage{
+	font-size: 1em;
+	width: 40%;
+	font-style: italic;
+}
+
+#refresh-img{
+	width: 2%;
+	left: 8.5%;
+	position: relative;
+	cursor: pointer;
+}
+
+button[type="submit"]{
+	width: 20%;
+}
+
+#black-preview{
+	max-height: 50vh;
+	min-height: 40vh;
+	background-color: #585858;
+	color: #ffffff;
+	font-weight: 200;
+	text-align: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 0px 0px 0px 0px !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #f9f9f9;
+    max-width: 50%;
+}
+
+#black-preview h3{
+	position: absolute;
+   top: 10px;
+   left: 0;
+   width: 100%;
+   padding: 0px 5% 0px 5%;
+}
+
+#white-preview{
+	max-height: 50vh;
+	min-height: 40vh;
+	background-color: #ffffff;
+	font-weight: 200;
+	border: 1px solid #ffffff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 0px 0px 0px 0px !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 50%;
+    text-align: right;
+}
+
+#white-preview h3{
+	position: absolute;
+   top: 10px;
+   left: 0;
+   width: 100%;
+   padding: 0px 5% 0px 5%;
+}
+
+/*========================================================*/
+/* Customize TinyMCE Editor Content Style */
+/*========================================================*/
+.myeditor {
+	background-color: #f9f9f9 !important;
+	border: none;
+
+}
+
+.mce-tinymce{
+	border: none !important;
+
+}
+
+
+.mce-toolbar-grp{
+	margin-bottom: 2vh;
+	background-color: #f9f9f9 !important;
+}
+
+.mce-btn{
+	background-color: #f9f9f9 !important;
+}
+
+.mce-panel{
+	background-color: #f9f9f9 !important;
+}
+
+.mce-edit-area{
+	border: none !important;
+}
+
+.mce-text{
+	color: #151515 !important;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+/*================================================
+	404 page
+================================================*/
+
+#error-cont h1 {
+	text-align: center;
+	font-size: 4em;
+	padding-top: 20vh;
+	padding-bottom: 5vh;
+}
+
+#error-cont a{
+	font-size: 2em;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+
+

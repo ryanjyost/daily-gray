@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The ...Spread Operator</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h2 class="jump">SPREADS!</h2>
+
+
+<p>R5, L2, L1, R1, R3, R3, L3, R3, R4, L2, R4, L4, R4, R3, L2, L1, L1, R2, R4, R4, L4, R3, L2, R1, L4, R1, R3, L5, L4, L5, R3, L3, L1, L1, R4, R2, R2, L1, L4, R191, R5, L2, R46, R3, L1, R74, L2, R2, R187, R3, R4, R1, L4, L4, L2, R4, L5, R4, R3, L2, L1, R3, R3, R3, R1, R1, L4, R4, R1, R5, R2, R1, R3, L4, L2, L2, R1, L3, R1, R3, L5, L3, R5, R3, R4, L1, R3, R2, R1, R2, L4, L1, L1, R3, L3, R4, L2, L4, L5, L5, L4, R2, R5, L4, R4, L2, R3, L4, L3, L5, R5, L4, L2, R3, R5, R5, L1, L4, R3, L1, R2, L5, L1, R4, L1, R5, R1, L4, L4, L4, R4, R3, L5, R1, L3, R4, R3, L2, L1, R1, R2, R2, R2, L1, L1, L2, L5, L3, L1</p>
+
+
+
+<script>
+
+const cleanData = document.querySelector('p').textContent.split(", ");
+const testData = ['R5', 'L5', 'R5', 'R3'];
+
+
+
+const data = cleanData;
+console.log(data);
+
+
+//function distance(data){
+
+	//12, 3, 6, 9, like a clock
+	let direction = 12;
+	let position = {x: 0, y: 0};
+	for (move of data){
+		console.log(position);
+		if(move[0]==='L'){
+			direction = direction===3 ? direction = 12 : direction - 3;
+
+			switch(direction) {
+				case 12:
+					position.y = position.y + Number(move.slice(1));
+					//console.log(position);
+					break;
+				case 3:
+					position.x = position.x + Number(move.slice(1));
+					//console.log(position);
+					break;
+				case 6:
+					position.y = position.y - Number(move.slice(1));
+					//console.log(position);
+					break;
+				case 9:
+					position.x = position.x - Number(move.slice(1));
+					//console.log(position);
+					break;
+			}
+		}
+		else{
+			direction = direction===12 ? direction = 3 : direction + 3;
+			switch(direction) {
+				case 12:
+					position.y = position.y + Number(move.slice(1));
+					//console.log(position);
+					break;
+				case 3:
+					position.x = position.x + Number(move.slice(1));
+					//console.log(position);
+					break;
+				case 6:
+					position.y = position.y - Number(move.slice(1));
+					//console.log(position);
+					break;
+				case 9:
+					position.x = position.x - Number(move.slice(1));
+					//console.log(position);
+					break;
+				default:
+					console.log('error');
+			}
+
+		}
+
+	}
+
+console.log(
+	`(${position.x}, ${position.y}) >>>> ${Math.abs(position.x)+Math.abs(position.y)}`
+)
+
+//distance(testData);
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
