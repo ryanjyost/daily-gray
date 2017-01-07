@@ -171,6 +171,29 @@ a[id="name"]{
 		font-size:  3.5vw;
 	}
 
+
+#call-to-action{
+	margin: auto;
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid #a4a4a4;
+	border-top: 1px solid #a4a4a4;
+}
+
+	#call-to-action p {
+		width: 50%;
+		display: block;
+		margin: auto;
+	}
+
+#start-writing-btn{
+	display: block;
+	width: 50%;
+	margin: auto;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+}
+
 .feed-item{
 	border-bottom: 1px solid #a4a4a4;
 	margin: 10px 0px 10px 0px;
@@ -625,6 +648,16 @@ button[type="submit"]{
   height: 100%;
   overflow: hidden;
 }
+
+/*================================================
+	Mock Post Pages
+================================================*/
+
+#switch-post-style{
+	display: block;
+	text-align: center;
+}
+
 /*================================================
 	404 page
 ================================================*/

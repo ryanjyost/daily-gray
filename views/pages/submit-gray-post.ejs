@@ -3,17 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <div class="form-errors">
-
         <% if(errors) { %>
             <% for (var i=0; i<errors.length; i++) { %>
                 <h6> <%= errors[i].msg %> <span class="error-close-icon">x</span> </h6>
             <% } %>
         <% } %>
-
-
     </div>
+
     <% include ../partials/head %>
     <% include ../partials/editor-scripts %>
 </head>
@@ -22,7 +19,7 @@
         <% include ../partials/header %>
     </header>
 
-    <% include ../partials/post-submit-form %>
+    <% include ../partials/gray-mock-form %>
 
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.1.5/quill.js"></script>
@@ -42,7 +39,6 @@
         }
 
     </script>
-
 
 
     <footer>

@@ -310,6 +310,16 @@ app.post('/supersecretsubmitpost', (req, res) => {
 
     });
 
+//============================================================================
+//Mock page to show what it's like to create a gray style post
+app.get('/submit-gray-post', (req, res) => {
+    res.render('pages/submit-gray-post', {errors: null});
+})
+
+//Mock page to show what it's like to create a regular style post
+app.get('/submit-post', (req, res) => {
+    res.render('pages/submit-post', {errors: null});
+})
 
 //============================================================================
 //Handle 404 error

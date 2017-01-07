@@ -1,0 +1,44 @@
+<form id="post-form" action="/supersecretsubmitpost" method="POST">
+
+          <a id="switch-post-style" href="/submit-gray-post">Switch to Gray Post Style</a><br>
+
+          <input type="text" placeholder="paste an image url here..." name="postImage" id="post-img-link">
+          <main>
+                <div id="top" class="row">
+                    <div id="img-preview" >
+                       <img id="post-img" src="" alt="" />
+                    </div>
+                </div>
+
+                <!-- <a target="_blank" href="#" id="black-src" class="img-src">image credit</a>
+                <a target="_blank" href="#" id="white-src" class="img-src">image credit</a> -->
+
+
+                <!-- The "Gray", a.k.a. the title -->
+                <div class="row" id="post-info-cont">
+
+                    <!-- Title a.k.a. Gray Area -->
+                    <h1 id="gray-title">
+                      <input type="text" placeholder="Title..." name="title">
+                    </h1>
+
+                    <!-- Author -->
+                    <p id="author">By <input type="text" placeholder="The person writing this." name="author"> </p>
+
+                    <!-- submit button -->
+                    <button id="submitPost" type="submit">Publish</button>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+
+                    <div id="content" class="col-sm-8">
+                        <div id="toolbar"></div>
+                            <textarea id="editor" type="text" name="content">
+                            </textarea>
+                    </div>
+                    <div class="col-sm-2"></div>
+
+                </div>
+          </main>
+    </form>
