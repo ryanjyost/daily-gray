@@ -3,17 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <div class="form-errors">
-
-        <% if(errors) { %>
-            <% for (var i=0; i<errors.length; i++) { %>
-                <h6> <%= errors[i].msg %> <span class="error-close-icon">x</span> </h6>
-            <% } %>
-        <% } %>
-
-
-    </div>
     <% include ../partials/head %>
     <% include ../partials/editor-scripts %>
 </head>
@@ -26,24 +15,6 @@
 
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.1.5/quill.js"></script>
-
-    <script type="text/javascript">
-
-        //close error messages
-        const errorNodes = document.getElementsByClassName("error-close-icon");
-        console.log(errorNodes)
-
-        for(let i = 0; i<errorNodes.length; i++){
-            errorNodes[i].addEventListener("click", () => {
-                errorNodes[i].parentNode.className = 'form-error-hidden';
-                errorNodes[i].parentNode.style.display = 'none';
-                 console.log(errorNodes[i].parentNode);
-            })
-        }
-
-    </script>
-
-
 
     <footer>
         <% include ../partials/footer %>
